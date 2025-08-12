@@ -130,6 +130,7 @@ This codebase has been developed with [**Python==3.8.19**](https://www.python.or
 cd RMT-PPAD
 conda env create -f environment.yml
 conda activate RMTPPAD
+cd ultralytics
 ```
 
 ### Data preparation and Pre-trained model
