@@ -1,0 +1,37 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO 2017 dataset https://cocodataset.org by Microsoft
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco/
+# Example usage: yolo train data=coco.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /home/jiayuan/data/yolo_v8_toy # dataset root dir
+train: images/train2017 # train images (relative to 'path') 118287 images
+val: images/val2017 # val images (relative to 'path') 5000 images
+test: images/val2017 # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+tnc: 3
+nc_list: [1,1,1]
+map: [None,{'10':'0'},{'11':'0'}]
+labels_list:
+  - detection-object
+  - seg-drivable
+  - seg-lane
+
+# Classes
+names:
+  0: person
+  1: rider
+  2: car
+  3: bus
+  4: truck
+  5: bike
+  6: motor
+  7: traffic light
+  8: traffic sign
+  9: train
+  10: drivable  # Add drivable class for drivable segmentation
+  11: lane  # Add lane class for lane segmentation
