@@ -135,6 +135,9 @@ cd ultralytics
 
 ### Data preparation and Pre-trained model
 
+### Note:
+Since we extended the label size for lane line testing, please use our provided dataset to reproduce the results reported in the paper. Further details are described in the paper.
+
 #### Download
 
 - Download the images from [images](https://bdd-data.berkeley.edu/).
@@ -142,7 +145,7 @@ cd ultralytics
 - Pre-trained model: [RMT-PPAD](https://uwin365-my.sharepoint.com/:u:/g/personal/wang621_uwindsor_ca/EVvXPuqxXdRAkIuAVdth14gBYKuDJ6XqlA2ppRHsmeQN_w?e=hKcXJX).
   
 - Download the annotations of detection from [labels](https://uwin365-my.sharepoint.com/:u:/g/personal/wang621_uwindsor_ca/EV2FyiQg0llNpBL2F5hnEi0BwfEFTP3jckw7adfLSXPzrQ?e=jSaTOO). 
-- Download the annotations of lane line segmentation and drivable area segmentation from [mask](https://uwin365-my.sharepoint.com/:u:/g/personal/wang621_uwindsor_ca/EXrUtDWQ5vlAgzaGopIC3foBZXbs5JNNJRgvR4XotO2cgg?e=CVLOHg). 
+- Download the annotations of lane line segmentation and drivable area segmentation from [mask](https://uwin365-my.sharepoint.com/:u:/g/personal/wang621_uwindsor_ca/EXrUtDWQ5vlAgzaGopIC3foBZXbs5JNNJRgvR4XotO2cgg?e=CVLOHg).
 
 We recommend the dataset directory structure to be the following:
 
