@@ -355,11 +355,15 @@ def get_save_dir(args, name=None):
         >>> print(save_dir)
         my_project/detect/train
     """
+    from ultralytics.utils.files import increment_path
     if getattr(args, "save_dir", None):
-        save_dir = args.save_dir
+        if args.save_dir.split('runs')[0] in args.resume:
+            save_dir = args.save_dir
+        else:
+            project = ROOT.parent / "runs" / args.task
+            name = name or args.name or f"{args.mode}"
+            save_dir = increment_path(Path(project) / name, exist_ok=args.exist_ok if RANK in {-1, 0} else True)
     else:
-        from ultralytics.utils.files import increment_path
-
         project = args.project or (ROOT.parent / "tests/tmp/runs" if TESTS_RUNNING else RUNS_DIR) / args.task
         name = name or args.name or f"{args.mode}"
         save_dir = increment_path(Path(project) / name, exist_ok=args.exist_ok if RANK in {-1, 0} else True)
