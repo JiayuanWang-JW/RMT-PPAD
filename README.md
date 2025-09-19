@@ -131,6 +131,7 @@ cd RMT-PPAD
 conda env create -f environment.yml
 conda activate RMTPPAD
 cd ultralytics
+python -m pip install -e .
 ```
 
 ### Data preparation and Pre-trained model
