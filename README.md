@@ -203,16 +203,12 @@ You can change the setting in predict.py
 If you find our paper and code useful for your research, please consider giving a star :star:   and citation :pencil: :
 
 ```BibTeX
-@ARTICLE{2025arXiv250806529W,
-       author = {{Wang}, Jiayuan and {Wu}, Q.~M. Jonathan and {Suto}, Katsuya and {Zhang}, Ning},
-        title = {RMT-PPAD: Real-time Multi-task Learning for Panoptic Perception in Autonomous Driving},
-      journal = {arXiv e-prints},
-     keywords = {Computer Vision and Pattern Recognition, Machine Learning},
-         year = 2025,
-        month = aug,
-          eid = {arXiv:2508.06529},
-        pages = {arXiv:2508.06529},
-archivePrefix = {arXiv},
-       eprint = {2508.06529}
-}
+@ARTICLE{wang2026rmt,
+  author={Wang, Jiayuan and Wu, Q. M. Jonathan and Zhang, Ning},
+  journal={IEEE Transactions on Mobile Computing}, 
+  title={RMT-PPAD: Real-time multi-task learning for panoptic perception in autonomous driving}, 
+  year={2026},
+  pages={1-16},
+  doi={10.1109/TMC.2026.3725133}}
 ```
+
